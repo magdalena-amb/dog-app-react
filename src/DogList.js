@@ -9,9 +9,9 @@ class DogList extends Component {
                 <h1 className='display-1 text-center' > Dog List! </h1>
                 <div className='row'>
                     {this.props.dogs.map(d => (
-                    <div key={d.name} className='Dog col-lg-4 text-center'>
+                    <div key={d.name} className='Dog col-lg-4 text-center mt-5'>
                         <img src={d.src} alt={d.name} />
-                        <h3>
+                        <h3 className='mt-3'>
                             <Link className='underline' to={`/dogs/${d.name}`}>{d.name}</Link>  </h3>
                     </div>
                     ))}   
